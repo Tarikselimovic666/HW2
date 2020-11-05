@@ -3,13 +3,18 @@
 <title> TARIK SELIMOVIC </title>
 </head>
 <style>
-body {font-family: Arial;}
+body {font-family: Arial;
+background-image:url("background.jpg");}
+.about{
+position:relative;
+display:flex;
+}
+.about-text{
+  position:center;
+}
 
-}
-@font-face {
-   font-family: myFirstFont;
-   src: url(sansation_light.woff);
-}
+
+
 img {
   border-radius: 50%;
 }
@@ -19,15 +24,17 @@ img {
 <hr>
 
 <center> <img src="tare.jpg"   alt="Photo of me">  
+  <hr>
  </center>
-<p> <center> My name is <b> Tarik Selimovic </b> and I was born in Sarajevo, Bosnia and Herzegovina in 1999. 
+ <div class="about">
+<p class="about-text"> <center> My name is <b> Tarik Selimovic </b> and I was born in Sarajevo, Bosnia and Herzegovina in 1999. 
 I am currently studying Computer Science on the Inernational University of Sarajevo. 
 I went to Musa Cazim Catic primary school, and my highschool was The First Bosniak Highschool, Cambridge. I also went to a music school called Mladen Pozajic, where I learned how to play the guitar and drums. I speak English, Bosnian, German and a bit of Turkish and Swedish. I am also fluent in Old Norse Language.
 On my first University year I started a private worldwide 5 digit bussines that sells and provides apparel and clothing.
 The name of my Company is <b> NORSE SOULS® </b>. You will find my website on the link below. </center>
 <hr>
  </p>
-
+</div>
  <center> <a href="https://www.norsesouls.com/" target="_blank">CLICK HERE TO VISIT NORSE SOULS! </a> </center>
 &nbsp;
 <center> <img src="ns1.bmp" > </center>
@@ -51,9 +58,9 @@ to bring heathenism into the mainstream and to enlighten the bigger populace abo
 <center>
 <h3>Click on the tabs below:</h3>
   <div class="tab">
-    <button class="tablinks" onclick="clickHandle(event, 'About me')">About me</button>
-    <button class="tablinks" onclick="clickHandle(event, 'Norse Souls')">Norse Souls</button>
-    <button class="tablinks" onclick="clickHandle(event, 'Contact me')">Contact me</button>
+    <a href="https://www.facebook.com/tarik.selimovic.560" target="_blank"><button >Facebook</button></a>
+    <a href="https://www.instagram.com/elcakfo/?hl=en/" target="_blank"><button >Instagram</button></a>
+    <a href="https://goo.gl/maps/q9AAw2KfkFwH9WqU9" target="_blank"><button>Location</button></a>
   </div>
 
   <div id="About me" class="tabcontent">
@@ -67,7 +74,9 @@ to bring heathenism into the mainstream and to enlighten the bigger populace abo
   <div id="Contact me" class="tabcontent">
     <h3>support@norsesouls.com</h3>
 </div>
-
+</center>
+</body>
+</html>
 <script>
 function clickHandle(evt, tabName) {
   let i, tabcontent, tablinks;
@@ -85,6 +94,3 @@ function clickHandle(evt, tabName) {
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " active";
 }
-</center>
-</body>
-</html>
